@@ -1,7 +1,40 @@
 Backbone Touch
+==============
 
-A simple view class allowing easy creation of swipe/touch enabled views
+A backbone view class allowing easy creation of swipe/touch enabled views
 
 or 
 
-mi furst git repo!!"!!!
+furst git repo!!"!!!
+
+Info
+-----
+I'm experimenting with backbone.
+It's been tested in Webkit-Dev and Webkit 533.1
+__Here be bugs__
+
+Use
+----
+You are best off extending this into another class like so
+
+	test = Backbone.View.Touch.extend({
+
+		el : $("#test"),
+
+		events : _.extend({}, Backbone.View.Touch.prototype.events(), {
+			"tap" : "clickHandler"
+		}),
+
+		clickHandler : function(e) {
+			console.log("click");
+		} 
+
+	});
+
+
+***
+
+(\(\
+( - -)
+((') (') 
+edwin.webb
